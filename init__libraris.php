@@ -12,7 +12,7 @@
     add_shortcode( 'init__libraris', 'init__libraris_func' ); 
 
     function init__libraris_func( $atts ){ 
-        ob_start(); // уберает от ошибкe когда вставляемый шорткод выводиться с начала всего контента
+        ob_start(); 
     
         static $already_run = false;
         if ( $already_run == true ) {
